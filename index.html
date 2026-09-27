@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1220">
+<title>AUTO PROFILES LIMITED | UNIT-III Vendor Repair Management</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">APL</div>
+      <div><b>AUTO PROFILES</b><span>LIMITED · UNIT-III</span></div>
+    </div>
+    <nav>
+      <button class="nav-item active" data-view="dashboard">⌂ <span>Control Tower</span></button>
+      <button class="nav-item" data-view="requests">▣ <span>Repair Requests</span></button>
+      <button class="nav-item" data-view="challans">▤ <span>Challan Tracking</span></button>
+      <button class="nav-item" data-view="vendors">◈ <span>Vendor Management</span></button>
+      <button class="nav-item" data-view="equipment">⚙ <span>Equipment / Spares</span></button>
+      <button class="nav-item" data-view="reports">▥ <span>Reports</span></button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="status-dot"><i></i> System Online</div>
+      <small>Vendor Repair Management v1.0</small>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="menu" id="menuBtn">☰</button>
+      <div class="crumb"><span>Operations</span><b>/</b><strong id="pageTitle">Control Tower</strong></div>
+      <div class="top-actions">
+        <button class="icon-btn" id="exportBtn" title="Export all data">⇩</button>
+        <button class="icon-btn" id="notifBtn" title="Notifications">♧<em id="notifCount">0</em></button>
+        <div class="user-chip"><div class="avatar">SU</div><div><b>Maintenance Admin</b><small>UNIT-III</small></div></div>
+      </div>
+    </header>
+
+    <section id="app"></section>
+  </main>
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+
+<div class="modal-backdrop" id="modal">
+  <div class="modal" id="modalBox"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
